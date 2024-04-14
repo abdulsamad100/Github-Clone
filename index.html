@@ -17,8 +17,65 @@
         <img src="images/hero.webp" id="heroimg" alt="">
     </div>
 
+    <a id="sidepanel" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+        aria-controls="offcanvasExample">
+        <img src="images/wlines.png" width="30px" alt="">
+    </a>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">GitHub</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" id="insidedd" type="button" data-bs-toggle="dropdown">
+                    Products
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Product 1</a></li>
+                    <li><a class="dropdown-item" href="#">Product 2</a></li>
+                    <li><a class="dropdown-item" href="#">Product 3</a></li>
+                </ul>
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" id="insidedd" type="button" data-bs-toggle="dropdown">
+                    Solutions
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Solution 1</a></li>
+                    <li><a class="dropdown-item" href="#">Solution 2</a></li>
+                    <li><a class="dropdown-item" href="#">Solution 3</a></li>
+                </ul>
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" id="insidedd" type="button" data-bs-toggle="dropdown">
+                    Open Source
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Project 1</a></li>
+                    <li><a class="dropdown-item" href="#">Project 2</a></li>
+                    <li><a class="dropdown-item" href="#">Project 3</a></li>
+                </ul>
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" id="insidedd" type="button" data-bs-toggle="dropdown">
+                    Pricing
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Plan 1</a></li>
+                    <li><a class="dropdown-item" href="#">Plan 2</a></li>
+                    <li><a class="dropdown-item" href="#">Plan 3</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-primary mt-3" id="bottomside">Sign up</button>
+            <div class="input-group mt-3" id="bottomside2">
+                <input type="text" class="form-control" placeholder="Enter your email">
+            </div>
+        </div>
+    </div>
+
     <header id="headcontain">
-        <img src="images/logo.png" alt="" width="33px">
+        <img src="images/logo.png" alt="" width="33px" id="mainlogogit">
 
         <div class="headdd">
             <div class="btn-group">
@@ -117,9 +174,11 @@
         <h1 id="heroheading">Let’s build from here</h1>
         <p id="heropara">The world’s leading AI-powered developer platform.</p>
         <div>
-            <input type="text" id="signinfield" class="form-control" placeholder="Email Address"
-                aria-label="Recipient's username" aria-describedby="basic-addon2">
-            <button type="button" class="btn" id="signupg">Sign up for GitHub</button>
+            <span id="fb">
+                <input type="text" id="signinfield" class="form-control" placeholder="Email Address"
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <button type="button" class="btn" id="signupg">Sign up for GitHub</button>
+            </span>
             <hr>
             <button type="button" class="btn" id="trial">Start a free enterprise trial ></button>
             <p id="phero2">Trusted by the world’s leading organizations <span>↘︎</span></p>

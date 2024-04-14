@@ -1,3 +1,6 @@
+:root {
+  --leftspace: 230px;
+}
 html,
 body {
   overflow-x: hidden;
@@ -123,7 +126,7 @@ header {
 #gline4 {
   height: 790px;
   width: 4px;
-  background-image: linear-gradient(#0d1116, #39b24f,#0d1116);
+  background-image: linear-gradient(#0d1116, #39b24f, #0d1116);
   z-index: -1;
 }
 #circle {
@@ -141,16 +144,16 @@ header {
 #heroheading {
   color: white;
   font-size: 100px;
-  padding-left: 230px;
+  padding-left: var(--leftspace);
   padding-top: 135px;
 }
 #heropara {
   font-size: 28px;
   color: rgba(255, 255, 255, 0.457);
-  padding-left: 230px;
+  padding-left: var(--leftspace);
 }
 #signinfield {
-  margin-left: 230px;
+  margin-left: var(--leftspace);
   margin-top: 80px;
   width: 335px;
   height: 45px;
@@ -190,46 +193,46 @@ hr {
 #phero2 {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.457);
-  padding-left: 230px;
+  padding-left: var(--leftspace);
   padding-top: 60px;
 }
 #partnersimg {
-  margin-left: 230px;
+  margin-left: var(--leftspace);
   margin-top: 30px;
   width: 1080px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-#pheading{
+#pheading {
   color: white;
   font-size: 25px;
-  margin-left: 230px;
+  margin-left: var(--leftspace);
   margin-top: 120px;
 }
-#producthero{
+#producthero {
   color: #5cff7a;
   font-size: 50px;
-  margin-left: 230px;
+  margin-left: var(--leftspace);
   margin-top: 10px;
   font-weight: 500;
 }
-#productherow{
+#productherow {
   color: white;
   font-size: 50px;
-  margin-left: 230px;
+  margin-left: var(--leftspace);
   margin-top: -10px;
   font-weight: 500;
   width: 900px;
 }
-#codemain{
+#codemain {
   z-index: -2;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.208);
   margin-top: 60px;
   margin-left: 130px;
 }
-#codemain2{
+#codemain2 {
   position: absolute;
   z-index: 9999;
   border-radius: 20px;
@@ -237,36 +240,36 @@ hr {
   margin-top: 280px;
   left: 870px;
 }
-#copilotpara{
+#copilotpara {
   color: white;
   font-size: 25px;
-  margin-left: 270px;
+  margin-left: var(--leftspace);
   margin-top: 80px;
   width: 500px;
 }
-#copilotpara span{
+#copilotpara span {
   opacity: 50%;
 }
-#copilotlink{
+#copilotlink {
   color: white;
   font-size: 25px;
-  margin-left: 270px;
+  margin-left: var(--leftspace);
   margin-top: 80px;
   width: max-content;
 }
-#copilotlink a{
+#copilotlink a {
   color: white;
   text-decoration: none;
 }
-#copilotlink:hover{
+#copilotlink:hover {
   border-bottom: 2px solid white;
 }
-#gradientline{
+#gradientline {
   position: absolute;
   margin-left: 180px;
   width: 80px;
 }
-#dyk{
+#dyk {
   font-size: small;
   color: #39b24f;
   border: 1px solid;
@@ -277,17 +280,17 @@ hr {
   padding-left: 5px;
   padding-right: 5px;
 }
-#dykdiv{
+#dykdiv {
   margin-top: 130px;
 }
-#dykdiv>#dykp{
+#dykdiv > #dykp {
   font-size: 70px;
   color: #39b24f;
   margin-left: 270px;
   font-weight: 500;
   width: 419px;
 }
-#dykdiv>p{
+#dykdiv > p {
   font-size: 25px;
   color: white;
   margin-left: 270px;
@@ -295,11 +298,13 @@ hr {
 }
 #video-container {
   position: relative;
-  top:400px;
+  top: 290px; /* Adjust as needed */
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
   background-color: #050d1f;
+  width: 70%; /* Adjust width as needed */
+  max-width: 1000px; /* Example max-width */
 }
 
 #video-container video {
@@ -307,11 +312,9 @@ hr {
   width: 70%;
   height: auto;
 }
-
 #video-container video::-webkit-media-controls {
   display: none !important;
 }
-
 #video-container video::-webkit-media-controls-enclosure {
   display: none !important;
 }
@@ -319,7 +322,6 @@ hr {
 /* footer */
 
 footer {
-  margin-top: -300px;
   background-color: #0d1116;
   padding: 20px 0;
   display: flex;
@@ -369,8 +371,237 @@ footer {
   text-decoration: underline;
 }
 
-.sbtn{
+.sbtn {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid white;
+}
 
+#sidepanel {
+  display: none;
+}
+
+#insidedd {
+  color: black;
+  background: none;
+  border: none;
+}
+
+#bottomside {
+  position: absolute;
+  bottom: 30px;
+  width: 350px;
+  background-color: rgb(31, 30, 30);
+}
+
+#bottomside2 {
+  position: absolute;
+  bottom: 80px;
+  width: 350px;
+}
+
+@media (max-width: 1215px) {
+  :root {
+    --leftspace: 120px;
+  }
+  #gline {
+    left: 50px;
+  }
+  #codemain {
+    width: 95%;
+    left: 50%;
+    transform: translateX(-11%);
+  }
+  #codemain2 {
+    width: 30%;
+    left: 60%;
+    margin-top: -30%;
+  }
+  #gradientline {
+    margin-left: 70px;
+  }
+  #dyk,
+  #dykdiv,
+  #dykdiv > #dykp,
+  #dykdiv > p {
+    margin-left: 80px;
+  }
+  #partnersimg > img {
+    height: 35px;
+  }
+  #partnersimg {
+    width: 80%;
+  }
+  hr {
+    margin-left: 630px;
+  }
+  #trial {
+    left: 680px;
+  }
+}
+
+@media (max-width: 1080px) {
+  #heroheading {
+    font-size: 70px;
+  }
+  #trial {
+    margin-top: -35px;
+  }
+  #productherow {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 950px) {
+  #search {
+    /* width: 190px;
+    right: 3%;
+    font-size: small; */
+    display: none;
+  }
+  #search > span {
+    margin-left: 0px;
+  }
+  #signin {
+    position: absolute;
+    left: 10px;
+    border: 1px solid white;
+    width: 80px;
+  }
+  .headdd,
+  #signup {
+    display: none;
+  }
+  #mainlogogit {
+    position: absolute;
+    left: 50%;
+    transform: translateX(50%);
+  }
+  #sidepanel {
+    display: inline;
+    position: absolute;
+    right: 10px;
+    top: 5%;
+  }
+  #heroheading {
+    width: 600px;
+    font-size: 80px;
+    font-weight: 700;
+  }
+  #heropara {
+    font-size: 20px;
+  }
+  #signinfield {
+    width: 200px;
+  }
+  hr {
+    margin-left: 500px;
+  }
+  #trial {
+    left: 550px;
+    top: 545px;
+  }
+  #productherow {
+    font-size: large;
+  }
+}
+
+@media (max-width: 820px) {
+  hr {
+    transform: rotate(180deg);
+    margin-top: 20px;
+    width: 75%;
+    margin-left: var(--leftspace);
+  }
+  #signinfield {
+    /* width: 150px; */
+    width: 40%;
+  }
+  #trial {
+    position: relative;
+    margin-top: 0px;
+    top: 0px;
+    left: 0;
+    margin-left: var(--leftspace);
+    width: 75%;
+  }
+  #fb {
+    width: 80%;
+  }
+  #signupg {
+    width: 40%;
+    font-size: 80%;
+  }
+  #video-container {
+    margin-top: -100px;
+    margin-bottom: 150px;
+  }
+  #signupg{
+    width: 30%;
+  }
+}
+
+@media (max-width: 520px) {
+  :root {
+    --leftspace: 40px;
+  }
+  #gline {
+    display: none;
+  }
+  #heroheading {
+    font-size: 70px;
+    width: 90%;
+  }
+  #heropara {
+    width: 70%;
+  }
+  #gradientline {
+    display: none;
+  }
+  #dykdiv {
+    position: relative;
+    margin-left: 0;
+    /* left: 0; */
+    left: var(--leftspace);
+    margin-top: 60px;
+  }
+  #dyk {
+    margin-left: 0;
+  }
+  #dykdiv > p,
+  #dykdiv > #dykp {
+    margin-left: 0;
+    left: 0;
+    margin-right: -30px;
+  }
+  #dykdiv>#dykp{
+    font-size: 40px;
+  }
+  #dykdiv>p{
+    font-size: 20px;
+    width: 90%;
+  }
+  #copilotpara{
+    font-size: 20px;
+    width: 90%;
+  }
+  #codemain {
+    margin-left: 80px;
+    width: 85%;
+  }
+  #video-container {
+    margin-top: -150px;
+    margin-bottom: 200px;
+    width: 90%;
+  }
+  #productherow{
+    width: 90%;
+  }
+  #trial{
+    font-size: 14px;
+  }
+  #producthero{
+    font-size: 30px;
+    font-weight: 200;
+    width: 90%;
+  }
 }
